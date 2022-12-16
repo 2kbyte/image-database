@@ -47,6 +47,16 @@
     border-radius: 5px;
 }
 
+.container {
+    display: flex;
+    padding: 5px;
+    margin: 15px;
+}
+
+img {
+    border-radius: 5px;
+}
+
 .body {
     padding: 0 15px;
 }
