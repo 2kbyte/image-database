@@ -49,16 +49,22 @@
 }
 
 /* Image Designs */
-.container {
-    display: flex;
-    padding: 5px;
-    margin: 15px;
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 figcaption {
     padding: 5px;
     color: #4e4c4c;
-    text-align: center;
 }
 
 .disabled-link {
@@ -68,6 +74,7 @@ figcaption {
 
 img {
     border-radius: 5px;
+    width: 300px;
     transition: transform .1s;
 }
 

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <script src="script.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -16,19 +17,25 @@
     <div class="body">
         Explore your current images
     </div>
-    <div class="container">
-        <figure>
-            <img src="images/pooh.png" alt='missing' />
-            <figcaption>Caption goes here</figcaption>
-        </figure>
-        <figure>
-            <img src="images/pooh.png" alt='missing' />
-            <figcaption>Caption goes here</figcaption>
-        </figure>
-        <figure>
-            <img src="images/pooh.png" alt='missing' />
-            <figcaption>Caption goes here</figcaption>
-        </figure>
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img id="1" src="images/pooh.png" alt="missing" onload="imgListener()"/>
+                <figcaption id="2">Caption goes here</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img id="1" src="images/pooh.png" alt="missing" onload="imgListener()"/>
+                <figcaption id="2">Caption goes here</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img id="1" src="images/the_neon_shallows.png" alt="missing" onload="imgListener()"/>
+                <figcaption id="2">Caption goes here</figcaption>
+            </figure>
+        </div>
     </div>
 </div>
 </html>
