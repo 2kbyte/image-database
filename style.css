@@ -48,25 +48,6 @@
     border-radius: 5px;
 }
 
-/* Image Designs */
-.column {
-    float: left;
-    width: 33.33%;
-    text-align: center;
-}
-  
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-figcaption {
-    padding: 5px;
-    color: #4e4c4c;
-}
-
 .disabled-link {
     pointer-events: none;
     color: #000000 !important;
