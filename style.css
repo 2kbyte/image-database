@@ -73,9 +73,10 @@ figcaption {
 }
 
 img {
-    border-radius: 5px;
-    width: 300px;
+    border-radius: 15px;
+    width: 250px;
     transition: transform .1s;
+    padding: 10px;
 }
 
 img:hover {
@@ -83,5 +84,6 @@ img:hover {
 }
 
 .body {
+    display: block;
     padding: 0 15px;
 }
