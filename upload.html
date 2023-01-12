@@ -20,7 +20,6 @@
         <form action="upload.php" id="image_input" method="post" enctype="multipart/form-data" accept-charset="utf-8">
             <input type="file" name="file" accept="image/png, image/jpg, image/jpeg, image/gif" onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])">
             <input type="submit" value="Upload">
-            
         </form>
         <img id="preview" wdith="250"/>
     </div>

@@ -13,18 +13,13 @@
         Upload Image
         <input type="text" placeholder="Search..">
     </div>
-    <h2>
-        <?php
-        echo "This is PHP code inside html"
-        ?>
-    </h2>
     <div class="body">
         <?php
         
         $filename = $_FILES['file']['name'];
         $location = "images/".$filename;
-        echo 'here'
-        if( move_uploaded_file($_FILES['file']['tmp_name'], $location)){
+        
+        if(move_uploaded_file($_FILES['file']['tmp_name'], $location)){
             echo 'File uploaded successfully';
         }else{
             echo 'Error uploading file';
