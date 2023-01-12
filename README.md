@@ -1,6 +1,7 @@
 # Image Database
 > **Warning**
-> This is a warning
+> The current state of this project is unstable/incomplete and is expected to have missing features and bugs. 
+
 An image database which currently allows the user to upload images and view them on a web server.
 
 ## Installation and Usage
