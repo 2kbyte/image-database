@@ -11,3 +11,5 @@ You can install the image database by cloning the repository:
 ```git clone https://github.com/2kbyte/image-database.git```
 
 Then open the 'index.html' file. Ensure that PHP has permissions to read/write to the 'images/' directory, otherwise the upload function will not work. 
+
+{% include youtube.html id="A6nsBnPNWjY" %}
