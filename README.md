@@ -12,4 +12,5 @@ You can install the image database by cloning the repository:
 
 Then open the 'index.html' file. Ensure that PHP has permissions to read/write to the 'images/' directory, otherwise the upload function will not work. 
 
-https://www.youtube.com/watch?v=A6nsBnPNWjY
+Showcase:
+[![Showcase](https://i.imgur.com/wfUT55k.png)](https://www.youtube.com/watch?v=A6nsBnPNWjY)
