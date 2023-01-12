@@ -2,7 +2,7 @@
 > **Warning**
 > The current state of this project is unstable/incomplete and is expected to have missing features and bugs. 
 
-An image database which currently allows the user to upload images and view them on a web server.
+An image database which currently allows the user to upload images and view them on a web server. Made by Evan.
 
 ## Installation and Usage
 Prerequisites: Web server (e.g. [Apache](https://www.apache.org/)), [PHP](https://www.php.net/downloads.php) (`^8.2.1`)
