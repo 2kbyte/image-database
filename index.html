@@ -1,38 +1,34 @@
 <!DOCTYPE html>
+<html>        
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-<html>
-    
-<script src="jquery.js"></script>
-<script src="script.js"></script>
-<link href="style.css" rel="stylesheet" type="text/css" />
-
-<!--
-    Todo:
-    - image properties in caption
-        ^ html/javasciprt
-    - tags in captions or
-        - expandable image with gui showing tags and edit options
-            ^ html/javascript
-    - additional iamge upload options (tags, rename)
-    - searching by tags/filenames
-        ^ html/javascript showing/hiding image divs
--->
-<div class="sidebar">
-    <a href="./index.html" class="disabled-link">Explore</a><!--
-    <a href="#">Tags</a>-->
-    <a href="./upload.html">Upload</a>
-</div>
-
-<div class="main">
-    <div class="header">
-        Explore
-        <input type="text" placeholder="Search..">
+    <!--
+        Todo:
+        - image properties in caption
+            ^ html/javasciprt
+        - tags in captions or
+            - expandable image with gui showing tags and edit options
+                ^ html/javascript
+        - additional iamge upload options (tags, rename)
+    -->
+    <div class="sidebar">
+        <a href="./index.html" class="disabled-link">Explore</a><!--
+        <a href="#">Tags</a>-->
+        <a href="./upload.html">Upload</a>
     </div>
-    <div class="body_images" id="image_storage">
-        Explore your current images
-        <div id ="image_display">
 
-        </id>
+    <div class="main" id="main-div">
+        <div class="header">
+            Explore
+            <input type="text" placeholder="Search.." id="search-input" onkeyup="search()">
+        </div>
+        <div class="body_images" id="image_storage">
+            Explore your current images
+            <div id ="image_display">
+
+            </id>
+        </div>
     </div>
-</div>
 </html>
