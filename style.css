@@ -72,3 +72,7 @@ img:hover {
     display: block;
     padding: 0 15px;
 }
+
+.body_images figure {
+    display: inline-block;
+}
