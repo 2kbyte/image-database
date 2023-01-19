@@ -33,7 +33,7 @@ $.ajax({
                 figure.appendChild(button);
                 button.appendChild(x_image)
 
-                $(".body_images").append(figure);
+                $(".images").append(figure);
             } 
         });
     }
