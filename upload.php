@@ -11,7 +11,6 @@
     <div class="main">
         <div class="header">
             Upload Image
-            <input type="text" placeholder="Search..">
         </div>
         <div class="body">
             <?php

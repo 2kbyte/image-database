@@ -3,6 +3,10 @@
 // are you sure window
 
 /* Read and display images */
+function delete_image() {
+    console.log('delteted')
+}
+
 var folder = "images/";
 
 $.ajax({
@@ -16,9 +20,18 @@ $.ajax({
                 
                 let figure_caption = document.createElement("figcaption");
                 figure_caption.textContent = val;
-                figure_caption.id = "caption"
-                figure.appendChild(image, figure_caption);
+                figure_caption.id = "caption";
+
+                let x_image = document.createElement("img");
+                let button = document.createElement("button");
+                button.onclick = 'delete_image()';
+                x_image.src = '/images/x-button.png';
+                x_image.style.width = '50px';
+
+                figure.appendChild(image);
                 figure.appendChild(figure_caption);
+                figure.appendChild(button);
+                button.appendChild(x_image)
 
                 $(".body_images").append(figure);
             } 

@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html>        
-    <script src="jquery.js"></script>
-    <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<html>
 
-    <!--
-        Todo:
-        - image properties in caption
-            ^ html/javasciprt
-        - tags in captions or
-            - expandable image with gui showing tags and edit options
-                ^ html/javascript
-        - additional iamge upload options (tags, rename)
-    -->
-    <div class="sidebar">
-        <a href="./index.html" class="disabled-link">Explore</a><!--
-        <a href="#">Tags</a>-->
-        <a href="./upload.html">Upload</a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image Database Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/">Database</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="upload" href="#">Upload</a>
+    </header>
+    <div class="block">
+        <h2 class="headline">The only image database you will ever need.</h2>
     </div>
+</body>
 
-    <div class="main" id="main-div">
-        <div class="header">
-            Explore
-            <input type="text" placeholder="Search.." id="search-input" onkeyup="search()">
-        </div>
-        <div class="body_images" id="image_storage">
-            Explore your current images
-            <div id ="image_display">
-
-            </id>
-        </div>
-    </div>
 </html>
