@@ -8,7 +8,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo-light.png">
+    <link rel="icon" href="assets/logo.png">
+    <script src="jquery.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Code+Pro&display=swap');
+    </style>
 </head>
 
 <body>
@@ -17,29 +22,29 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="./explore.html">Explore</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li><a href="https://github.com/2kbyte/image-database" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
-        <a class="white-button" href="./upload.html">Upload</a><!--
-        <input class="search" type="text" placeholder="Search..">-->
+        <a class="button" href="./upload.html">Upload</a>
     </header>
-    <div class="block explore">
-        <h2 class="headline">
-            Explore your current images.<br />
-            <a class="down" href="#image-section"><img src="assets/down-arrow.png"></a>
-        </h2>
+    <div class="block">
+        <h2 class="headline">View all of your images.<br>All in one place.</h2>
+        <a class="down" href="#image-block"><img src="assets/down-arrow.png"></a>
     </div>
-    <div class="image-block" id="image-section">
-        <div class="option-bar">
-            <a class="white-button" href="./upload.html">Upload</a>
-            <input class="search" type="text" placeholder="Search..">
+    <div class="white-block" id="image-block">
+        <div class="tabs" id="tab-header">
+            <a href="#" class="tab">Images</a>
+            <a href="#" class="tab">Upload</a>
+            <input class="search" type="text" placeholder="Search...">
         </div>
-        <img src="images/eiffel-tower.jpg">
-        <img src="images/forest.jpg">
-        <img src="images/mountains.jpg">
-        <img src="images/mountains (2).jpg">
-        <img src="images/pyramids-giza.jpg">
-        <img src="images/tokyo-japan.jpg">
+        <div class="images">
+            <img src="images/eiffel-tower.jpg">
+            <img src="images/forest.jpg">
+            <img src="images/mountains.jpg">
+            <img src="images/mountains (2).jpg">
+            <img src="images/pyramids-giza.jpg">
+            <img src="images/tokyo-japan.jpg">
+        </div>
     </div>
 </body>
 
