@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html>        
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Explore - Database</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
     <script src="jquery.js"></script>
-    <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Code+Pro&display=swap');
+    </style>
+</head>
 
-    <!--
-        Todo:
-        - image properties in caption
-            ^ html/javasciprt
-        - tags in captions or
-            - expandable image with gui showing tags and edit options
-                ^ html/javascript
-        - additional iamge upload options (tags, rename)
-    -->
-    <div class="sidebar">
-        <a href="./index.html" class="disabled-link">Explore</a><!--
-        <a href="#">Tags</a>-->
-        <a href="./upload.html">Upload</a>
+<body>
+    <header>
+        <a class="logo" href="./index.html">Database</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./explore.html">Explore</a></li>
+                <li><a href="https://github.com/2kbyte/image-database" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </nav>
+        <a class="button" href="./explore.html#upload" onclick="uploadTab()">Upload</a>
+    </header>
+    <div class="block">
+        <h2 class="headline">View all of your images.<br>All in one place.</h2>
+        <a class="down" href="#image-block"><img src="assets/down-arrow.png"></a>
     </div>
-
-    <div class="main" id="main-div">
-        <div class="header">
-            Explore
-            <input type="text" placeholder="Search.." id="search-input" onkeyup="search()">
+    <div class="white-block" id="image-block">
+        <div class="tabs" id="tab-header">
+            <a href="#images" class="tab" id="image-tab" onclick="showSection('images', 'upload')">Images</a>
+            <a href="#upload" class="tab" id="upload-tab" onclick="showSection('upload', 'images')">Upload</a>
+            <input class="search" type="text" placeholder="Search..." id="search" onkeyup="search()">
         </div>
-        <div class="body_images" id="image_storage">
-            Explore your current images
-            <div id ="image_display">
-
-            </div>
+        <div class="images" id="images">
+        </div>
+        <div class="upload" id ="upload">
+            <form class="upload-section" action="./upload.php#upload" id="image_input" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+                <input class="upload-section" type="file" name="file" accept="image/png, image/jpg, image/jpeg, image/gif" onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])">
+                <input class="upload-section" type="submit" value="Upload">
+            </form>
+            <img class="preview" id="preview">
         </div>
     </div>
+</body>
+
 </html>

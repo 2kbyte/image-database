@@ -1,78 +1,166 @@
-/* General Design */
-.sidebar {
-    height: 100%;
-    width: 130px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    border-right: solid 2px #dddddd;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.sidebar a {
-    padding: 6px 8px 6px 16px;
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    font-family: 'Source Code Pro', monospace;
     text-decoration: none;
-    font-size: 18px;
-    color: #818181;
-    display: block;
 }
 
-.sidebar a:hover {
-    color: #000000;
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 15%;
 }
 
-.main {
-    margin-left: 119px;
-    padding: 10px 5px;
+.logo {
+    margin-right: auto;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-decoration: none;
 }
 
-.header {
-    font-size: 25px;
-    padding: 0 15px 10px;
-    color: #6d6565;
-    border-bottom: 2px solid #dddddd;
-    margin-bottom: 10px;
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
 }
 
-.header input[type=text] {
-    float: right;
-    border: none;
-    margin-right: 16px;
-    font-size: 17px;
-    color: #6d6565;
-    padding: 2px;
-    border: 2px solid #dddddd;
-    border-radius: 5px;
+.nav-links li {
+    padding: 0px 20px;
 }
 
-.disabled-link {
-    color: #000000 !important;
+.nav-links li a {
+    color: white;
 }
 
-img {
+.nav-links li a:hover {
+    color: #b2b5b5;
+}
+
+.button {
+    padding: 9px 25px;
     border-radius: 15px;
-    width: 250px;
-    transition: transform .1s;
-    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
-img:hover {
-    transform: scale(1.05);
+.button:hover {
+    background-color: #9b9d9d;
 }
 
-.body {
-    display: block;
-    padding: 0 15px;
+.block {
+    text-align: center;
+    height: 90vh;
 }
 
-.body_images {
-    display: block;
-    padding: 0 15px;
+.explore-block {
+    min-height: 920px;
 }
 
-.body_images figure {
+.white-block {
+    text-align: center;
+    background-color: white;
+    color: black;
+    min-height: 100vh;;
+}
+
+.headline {
+    padding: 13% 10% 30px 10%;
+}
+
+.down img {
+    width: 50px;
+    cursor: pointer;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1 }
+    50% { opacity: 0.5 }
+    100% { opacity: 1 }
+}
+
+.tabs {
+    padding: 50px 0 5px 0;
+    background-color: white;
+    color: black;
+}
+
+.tab {
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+    transition: all 0.3s ease 0s;
+}
+
+.tab:hover {
+    background-color: #e2e2e2;
+}
+
+.search {
+    padding: 5px 30px 5px 30px;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-bottom: 1px solid black;
+    transition: all 0.3s ease 0s;
+}
+
+.search:focus {
+    background-color: #e2e2e2;
+    outline: none !important;
+}
+
+.search:hover {
+    background-color: #e2e2e2;
+    outline: none !important;
+}
+
+.images, .images figure {
     display: inline-block;
+    position: relative;
+    background-color: white;
+}
+
+.images figure img {
+    position: relative;
+    margin: 20px 20px 0px 20px;
+    padding: 10px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    transition: transform .1s;
+}
+
+.images img:hover {
+    transform: scale(1.03);
+}
+
+.images figure figcaption {
+    background-color: transparent;
+    color: black;
+}
+
+.upload, .upload-section {
+    background-color: white;
+    color: black;
+}
+
+.upload-section {
+    margin: 15px;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+}
+
+.preview {
+    background-color: transparent;
+    width: 400
 }
