@@ -45,7 +45,7 @@
             if(move_uploaded_file($_FILES['file']['tmp_name'], $location)){
                 echo '<br />File uploaded successfully';
             }else{
-                echo '<br />Error uploading file';
+                echo '<br />Error uploading file. File must be a valid image type';
             }
             ?>
         </div>

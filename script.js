@@ -2,24 +2,25 @@
 var folder = "images/";
 
 $.ajax({
-    url : folder,
+    url: folder,
     success: function (data) {
         $(data).find("a").attr("href", function (i, val) {
             if (document.URL.includes("upload.php")) {
                 return
             }
-            if (val.match(/\.(jpe?g|png|gif)$/)) { 
+            if (val.match(/\.(jpe?g|png|gif)$/)) {
                 let figure = document.createElement("figure");
                 let image = document.createElement("img");
                 let figure_caption = document.createElement("figcaption");
-                image.src = (folder + val);                
+
+                image.src = (folder + val);
                 figure_caption.textContent = decodeURI(val);
 
                 figure.appendChild(image);
                 figure.appendChild(figure_caption);
 
                 $(".images").append(figure);
-            } 
+            }
         });
     }
 });
@@ -29,11 +30,9 @@ var tab1 = document.getElementById('image-tab');
 var tab2 = document.getElementById('upload-tab');
 
 function showSection(section1, section2) {
-    
-
     document.getElementById(section1).style.display = "block";
     document.getElementById(section2).style.display = "none";
-    
+
     if (section1 == 'images') {
         tab1.style.backgroundColor = '#d7d7d7';
         tab2.style.backgroundColor = '';
@@ -50,7 +49,7 @@ function checkTab() {
         document.getElementById('images').style.display = "none";
         tab2.style.backgroundColor = '#d7d7d7';
         tab1.style.backgroundColor = '';
-    } else if (document.URL.includes("explore.html#images")) {
+    } else if (document.URL.includes("explore.html#images") || document.URL.includes("explore.html")) {
         document.getElementById('images').style.display = "block";
         document.getElementById('upload').style.display = "none";
         tab1.style.backgroundColor = '#d7d7d7';
