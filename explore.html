@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+<!--import all scripts, styles, fonts, sets icons, title-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
 </head>
 
 <body>
+    <!--Create navigation bar with logo, explore tab, github tab, and upload button-->
     <header>
         <a class="logo" href="./index.html">Database</a>
         <nav>
@@ -25,20 +27,24 @@
                 <li><a href="https://github.com/2kbyte/image-database" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </nav>
-        <a class="button" href="./explore.html#upload" onclick="uploadTab()">Upload</a>
+        <a class="button" href="./explore.html#upload">Upload</a>
     </header>
+    <!--Create first block with heading information and down arrow which leads to image block-->
     <div class="block">
         <h2 class="headline">View all of your images.<br>All in one place.</h2>
         <a class="down" href="#image-block"><img src="assets/down-arrow.png"></a>
     </div>
+    <!--Create white image block with two tabs; one image tab and one upload tab-->
     <div class="white-block" id="image-block">
         <div class="tabs" id="tab-header">
             <a href="#images" class="tab" id="image-tab" onclick="showSection('images', 'upload')">Images</a>
             <a href="#upload" class="tab" id="upload-tab" onclick="showSection('upload', 'images')">Upload</a>
             <input class="search" type="text" placeholder="Search..." id="search" onkeyup="search()">
         </div>
+        <!--Create image container with id to be referenced in script.js-->
         <div class="images" id="images">
         </div>
+        <!--Create upload tab with form which runs upload.php when submitted-->
         <div class="upload" id ="upload">
             <form class="upload-section" action="./upload.php#upload" id="image_input" method="post" enctype="multipart/form-data" accept-charset="utf-8">
                 <input class="upload-section" type="file" name="file" accept="image/png, image/jpg, image/jpeg, image/gif" onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])">
