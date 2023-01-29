@@ -12,3 +12,6 @@ Then open the 'index.html' file. Without a webserver, the images will not load b
 
 Old Showcase:
 [![Showcase](https://i.imgur.com/lC9q6Gg.png)](https://www.youtube.com/watch?v=A6nsBnPNWjY)
+
+New Showcase:
+https://www.youtube.com/watch?v=4tQKeVgAqvQ
