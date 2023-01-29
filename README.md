@@ -11,7 +11,7 @@ You can install the image database by cloning the repository:
 Then open the 'index.html' file. Without a webserver, the images will not load because there must be an HTTP request. Ensure that PHP has permissions to read/write to the 'images/' directory, otherwise the upload function will not work. 
 
 Old Showcase:
-[![Showcase](https://i.imgur.com/lC9q6Gg.png)](https://www.youtube.com/watch?v=A6nsBnPNWjY)
+https://www.youtube.com/watch?v=A6nsBnPNWjY
 
 New Showcase:
 https://www.youtube.com/watch?v=4tQKeVgAqvQ
